@@ -9,9 +9,7 @@ function App() {
   const [joke, setJoke] = useState('');
 
   const generateJokes = () => {
-    fetch(API_URL)
-      .then(res=>res.json())
-      .then(data=>setJoke(data.value.joke))
+    fetch(API_URL).then(res=>res.json()).then(data=>setJoke(data.value.joke))
     
   }
 
